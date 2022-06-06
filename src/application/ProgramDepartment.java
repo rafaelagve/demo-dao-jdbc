@@ -22,6 +22,13 @@ public class ProgramDepartment {
 
 		System.out.println("\n===teste 2: Department findById()");
 		System.out.println(depDao.findById(3));
+		
+		System.out.println("\n===teste 3: Department update()");
+		Department de = new Department();
+		de = depDao.findById(3);
+		de.setName("Clothes");
+		depDao.update(de);
+		
 
 	}
 
